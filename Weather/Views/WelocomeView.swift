@@ -13,7 +13,7 @@ struct WelocomeView: View {
     var body: some View {
         VStack{
             VStack(spacing: 20) {
-                Text("Welcome to the Weather App")
+                Text("Welcome to the Weather App ui")
                     .bold().font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
             }
         }
