@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A877529D2C370B6400E37736 /* WelocomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A877529C2C370B6400E37736 /* WelocomeView.swift */; };
 		A899ABB02C333761000A00D9 /* WeatherApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A899ABAF2C333761000A00D9 /* WeatherApp.swift */; };
 		A899ABB22C333761000A00D9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A899ABB12C333761000A00D9 /* ContentView.swift */; };
 		A899ABB42C333762000A00D9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A899ABB32C333762000A00D9 /* Assets.xcassets */; };
@@ -35,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A877529C2C370B6400E37736 /* WelocomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelocomeView.swift; sourceTree = "<group>"; };
 		A899ABAC2C333761000A00D9 /* Weather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Weather.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A899ABAF2C333761000A00D9 /* WeatherApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherApp.swift; sourceTree = "<group>"; };
 		A899ABB12C333761000A00D9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -73,6 +75,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A877529B2C370AB200E37736 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A899ABB12C333761000A00D9 /* ContentView.swift */,
+				A877529C2C370B6400E37736 /* WelocomeView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		A899ABA32C333761000A00D9 = {
 			isa = PBXGroup;
 			children = (
@@ -96,9 +107,9 @@
 		A899ABAE2C333761000A00D9 /* Weather */ = {
 			isa = PBXGroup;
 			children = (
+				A877529B2C370AB200E37736 /* Views */,
 				A8A90E402C35C7410079CDBF /* Mannagers */,
 				A899ABAF2C333761000A00D9 /* WeatherApp.swift */,
-				A899ABB12C333761000A00D9 /* ContentView.swift */,
 				A899ABB32C333762000A00D9 /* Assets.xcassets */,
 				A899ABB52C333762000A00D9 /* Preview Content */,
 			);
@@ -271,6 +282,7 @@
 				A8A90E422C35C78D0079CDBF /* LocationMannager.swift in Sources */,
 				A899ABB22C333761000A00D9 /* ContentView.swift in Sources */,
 				A899ABB02C333761000A00D9 /* WeatherApp.swift in Sources */,
+				A877529D2C370B6400E37736 /* WelocomeView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
