@@ -1,4 +1,4 @@
- //
+//
 //  ContentView.swift
 //  Weather
 //
@@ -8,18 +8,30 @@
 import SwiftUI
 
 struct ContentView: View {
-    @StateObject var locationManager = LocationMannager()
+    @StateObject var locationManager = LocationManager()
     
     var body: some View {
         VStack {
-            WelocomeView()
-                .environmentObject(locationManager)
+            if let location = locationManager.location {
+                Text("Your coordinates are: \(location.longitude), \(location.latitude)")
+            } else {
+                if locationManager.isLoading {
+                    LoadingView()
+                        .environmentObject(locationManager)
+                } else {
+                    WelcomeView()
+                        .environmentObject(locationManager)
+                }
+            }
         }
         .background(Color(hue: 0.608, saturation: 0.963, brightness: 0.526))
-        .preferredColorScheme(/*@START_MENU_TOKEN@*/.dark/*@END_MENU_TOKEN@*/)
+        .preferredColorScheme(.dark)
     }
 }
 
-#Preview {
-    ContentView()
+struct ContentView_Previews: PreviewProvider {
+    static var previews: some View {
+        ContentView()
+    }
 }
+

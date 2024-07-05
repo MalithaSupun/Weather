@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		A877529D2C370B6400E37736 /* WelocomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A877529C2C370B6400E37736 /* WelocomeView.swift */; };
+		A877530B2C373A4800E37736 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A877530A2C373A4800E37736 /* LoadingView.swift */; };
 		A899ABB02C333761000A00D9 /* WeatherApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A899ABAF2C333761000A00D9 /* WeatherApp.swift */; };
 		A899ABB22C333761000A00D9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A899ABB12C333761000A00D9 /* ContentView.swift */; };
 		A899ABB42C333762000A00D9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A899ABB32C333762000A00D9 /* Assets.xcassets */; };
@@ -37,6 +38,7 @@
 
 /* Begin PBXFileReference section */
 		A877529C2C370B6400E37736 /* WelocomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelocomeView.swift; sourceTree = "<group>"; };
+		A877530A2C373A4800E37736 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 		A899ABAC2C333761000A00D9 /* Weather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Weather.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A899ABAF2C333761000A00D9 /* WeatherApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherApp.swift; sourceTree = "<group>"; };
 		A899ABB12C333761000A00D9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -80,6 +82,7 @@
 			children = (
 				A899ABB12C333761000A00D9 /* ContentView.swift */,
 				A877529C2C370B6400E37736 /* WelocomeView.swift */,
+				A877530A2C373A4800E37736 /* LoadingView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -282,6 +285,7 @@
 				A8A90E422C35C78D0079CDBF /* LocationMannager.swift in Sources */,
 				A899ABB22C333761000A00D9 /* ContentView.swift in Sources */,
 				A899ABB02C333761000A00D9 /* WeatherApp.swift in Sources */,
+				A877530B2C373A4800E37736 /* LoadingView.swift in Sources */,
 				A877529D2C370B6400E37736 /* WelocomeView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

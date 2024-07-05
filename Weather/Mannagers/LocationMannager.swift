@@ -1,5 +1,5 @@
 //
-//  LocationMannager.swift
+//  LocationManager.swift
 //  Weather
 //
 //  Created by Malitha Supun on 2024-07-03.
@@ -8,7 +8,7 @@
 import Foundation
 import CoreLocation
 
-class LocationMannager: NSObject,ObservableObject,CLLocationManagerDelegate {
+class LocationManager: NSObject, ObservableObject, CLLocationManagerDelegate {
     let manager = CLLocationManager()
     
     @Published var location: CLLocationCoordinate2D?
@@ -29,10 +29,8 @@ class LocationMannager: NSObject,ObservableObject,CLLocationManagerDelegate {
         isLoading = false
     }
     
-    func locationManager(_manager: CLLocationManager, didFailWithError error: Error) {
+    func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
         print("Error getting location", error)
         isLoading = false
     }
 }
-
-//06.04//
